@@ -26,6 +26,31 @@
     }
 }());
 
+const model = {
+	students: [
+		{
+			name: 'Slappy the Frog',
+			attendance: 0,
+		},
+		{
+			name: 'Lilly the Lizard',
+			attendance: 0,
+		},
+		{
+			name: 'Paulrus the Walrus',
+			attendance: 0,
+		},
+		{
+			name: 'Gregory the Goat',
+			attendance: 0,
+		},
+		{
+			name: 'Adam the Anaconda',
+			attendance: 0,
+		},
+	],
+	days: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+};
 
 /* STUDENT APPLICATION */
 $(function() {
