@@ -40,6 +40,7 @@ class Octopus {
 	changeAttendance(i, j) {
 		const attendance = this.model.students[i].attendance;
 		attendance[j] = !(attendance[j]);
+		localStorage.attendance = JSON.stringify(this.model);
 	}
 }
 
@@ -98,5 +99,5 @@ class View {
 	}
 }
 
-const view = new View(new Octopus(model));
+const view = new View(new Octopus(localStorage.attendance ? JSON.parse(localStorage.attendance) : model));
 view.init();
