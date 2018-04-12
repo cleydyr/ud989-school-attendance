@@ -70,16 +70,16 @@ class View {
 
 	refresh() {
 		const tableBody = this.octopus.getStudents()
-			.map((student, index) => {
+			.map((student, studentIndex) => {
 				const attendanceMarkup =
 					this.octopus.getDays()
-						.map(day => {
+						.map((day, dayIndex) => {
 							return `
 								<td class="attend-col">
 									<input
 										type="checkbox"
-										${student.attendance[day] ? 'checked' : ''}
-										onChange="view.checkboxChanged(${index}, ${day})">
+										${student.attendance[dayIndex] ? 'checked' : ''}
+										onChange="view.checkboxChanged(${studentIndex}, ${dayIndex})">
 								</td>`;
 						})
 						.reduce(concat, '');
