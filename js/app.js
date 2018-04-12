@@ -88,7 +88,7 @@ class View {
 					<tr class="student">
 						<td class="name-col">${student.name}</td>
 						${attendanceMarkup}
-						<td class="missed-col">${student.attendance.filter(attended => attended).length}</td>
+						<td class="missed-col">${student.attendance.filter(attended => !attended).length}</td>
 					</tr>
 				`;
 			})
