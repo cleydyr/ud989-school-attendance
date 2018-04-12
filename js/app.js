@@ -2,23 +2,23 @@ const model = {
 	students: [
 		{
 			name: 'Slappy the Frog',
-			attendance: [],
+			attendance: (new Array(12)).fill(false),
 		},
 		{
 			name: 'Lilly the Lizarda',
-			attendance: [],
+			attendance: (new Array(12)).fill(false),
 		},
 		{
 			name: 'Paulrus the Walrus',
-			attendance: [],
+			attendance: (new Array(12)).fill(false),
 		},
 		{
 			name: 'Gregory the Goat',
-			attendance: [],
+			attendance: (new Array(12)).fill(false),
 		},
 		{
 			name: 'Adam the Anaconda',
-			attendance: [],
+			attendance: (new Array(12)).fill(false),
 		},
 	],
 	days: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
